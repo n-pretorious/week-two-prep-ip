@@ -1,4 +1,5 @@
-function akiName(){
+
+function akanName(){
   let dob = document.getElementById("birthDate").value;
   let weekDay = new Date(dob).getDay()
 
@@ -6,7 +7,6 @@ function akiName(){
 
   for (let i = 0, length = gender.length; i < length; i++) {
     if (gender[i].checked) {
-      // do whatever you want with the checked radio
       if (gender[i].value == "male") {
         if (weekDay === 0) {
           alert("Kwasi")
