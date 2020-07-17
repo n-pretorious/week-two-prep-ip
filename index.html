@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akan Name</title>
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <h1>Akan (I can) know my name</h1>
     </div>
@@ -15,24 +16,26 @@
       <p>This is a web application that calculates an Akan Name based on your date of birth and gender. <br>To learn more click <a href="https://en.wikipedia.org/wiki/Akan_names">here</a></p>
     </div>
     <div>
-      <form action="" method="">
-          <label for="date">
-            Enter your birth date:
-            <input type="date" name="date" id="birthDate" required>
-          </label><br>
-  
-          <label for="male">
-            <input type="radio" name="gender" id="male" value="male" required>
-            Male
-          </label><br>
-  
-          <label for="female">
-            <input type="radio" name="gender" id="female" value="female">
-            Female
-          </label><br>
-  
-          <button type="reset">Reset</button>
-          <button onclick="akanName()">Submit</button>
+      <form>
+        <div class="form-group">
+          <label for="date">Enter your birth date</label>
+          <input class="form-control col-md-2" type="date" name="date" id="birthDate" required><br>
+        </div>
+
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+            <label class="form-check-label" for="male">Male</label><br>
+
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label class="form-check-label" for="female">Female</label><br>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="reset" class="btn btn-primary">Reset</button>
+          <button onclick="akanName()" class="btn btn-primary">Submit</button>
+        </div>
       </form>
     </div>
   </div>  
