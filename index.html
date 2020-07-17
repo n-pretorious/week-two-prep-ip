@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akan Name</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>Akan (I can) know my name</h1>
+    </div>
+    <div class="row">
+      <p>This is a web application that calculates an Akan Name based on your date of birth and gender. <br>To learn more click <a href="https://en.wikipedia.org/wiki/Akan_names">here</a></p>
+    </div>
+    <div>
+      <form action="post" method="post">
+        <div>
+          <label for="date">
+            Enter your birth date:
+            <input type="date" name="date" id="birthDate" required>
+          </label><br>
+  
+          <label for="male">
+            <input type="radio" name="gender" id="male" value="male">
+            Male
+          </label><br>
+  
+          <label for="female">
+            <input type="radio" name="gender" id="female" value="female">
+            Female
+          </label><br>
+  
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>  
+</body>
+</html>
