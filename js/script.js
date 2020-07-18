@@ -3,41 +3,42 @@ function akanName(){
   let dob = document.getElementById("birthDate").value;
   let weekDay = new Date(dob).getDay()
 
-  let gender = document.getElementsByName('gender');
+  let gender = document.getElementsByName("gender");
+  let response = document.getElementById("response")
 
   for (let i = 0, length = gender.length; i < length; i++) {
     if (gender[i].checked) {
       if (gender[i].value == "male") {
         if (weekDay === 0) {
-          alert("Kwasi")
+          response.innerHTML = "Kwasi"
         } else if (weekDay === 1) {
-          alert("Kwadwo")
+          response.innerHTML = "Kwadwo"
         } else if (weekDay === 2) {
-          alert("Kwabena")
+          response.innerHTML = "Kwabena"
         } else if (weekDay === 3) {
-          alert("Kwaku")
+          response.innerHTML = "Kwaku"
         } else if (weekDay === 4) {
-          alert("Yaw")
+          response.innerHTML = "Yaw"
         } else if (weekDay === 5) {
-          alert("Kofi")
+          response.innerHTML = "Kofi"
         } else {
-          alert("Kwame")
+          response.innerHTML = "Kwame"
         }
       } else {
         if (weekDay === 0) {
-          alert("Akosua")
+          response.innerHTML = "Akosua"
         } else if (weekDay === 1) {
-          alert("Adwoa")
+          response.innerHTML = "Adwoa"
         } else if (weekDay === 2) {
-          alert("Abenaa")
+          response.innerHTML = "Abenaa"
         } else if (weekDay === 3) {
-          alert("Akua")
+          response.innerHTML = "Akua"
         } else if (weekDay === 4) {
-          alert("Yaa")
+          response.innerHTML = "Yaa"
         } else if (weekDay === 5) {
-          alert("Afua")
+          response.innerHTML = "Afua"
         } else {
-          alert("Ama")
+          response.innerHTML = "Ama"
         }
       }
     }
