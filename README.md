@@ -12,6 +12,13 @@ $ git clone https://github.com/n-pretorious/week-two-prep-ip.git
 * HTML and CSS
 * JavaScript
 
+
+## Behavior Driven Development
+| Input            | Behaviour                         | Output                        |
+| ------------------- | ----------------------------- | ----------------------------- |
+| User submits without inputing data in one or more fields | The form does not submit | User is prompted to fill required fields |
+| User submits DOB details | The website finds the Akan name | User's Akan name is displayed |
+
 ## Live Link (github pages)
 https://n-pretorious.github.io/week-two-prep-ip/
 
