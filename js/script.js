@@ -1,16 +1,38 @@
-let dob = document.getElementById("birthDate").value;
-let weekDay = new Date(dob).getDay()
-
-let gender = document.getElementsByName("gender")
-let response = document.getElementById("response")
+let dob = document.getElementById("birthDate")
 
 // reset fields in the form
 function clearAnswer() {
   response.innerHTML = ''
 }
 
+
+function akanName(params) {
+  validDate()
+}
+// validate date input
+function validDate() {
+  let d = new Date(dob.value).getDate()
+  let m = new Date(dob.value).getMonth() + 1 //getMonth() has a zero based index that's why the one is added (1-12 months)
+  let y = new Date(dob.value).getFullYear()
+
+  if (d <= 0 || d > 31) {
+    alert('enter a valid day of month')
+  } else if (m <= 0 || m > 12) {
+    alert('enter a valid month')    
+  } else if (y > new Date().getFullYear() ) {
+    alert("enter a valid year")
+  } else {
+    assignName()
+  }
+}
+
 // find users akan name
-function akanName() {
+function assignName() {
+  let gender = document.getElementsByName("gender")
+  let response = document.getElementById("response")
+
+  let weekDay = new Date(dob).getDay()
+
   for (let i = 0, length = gender.length; i < length; i++) {
     if (gender[i].checked) {
       if (gender[i].value == 'male') {
