@@ -1,3 +1,7 @@
+.container {
+  padding: 2px;
+}
+
 .row h1 {
   padding: 1rem;
   text-align: center;

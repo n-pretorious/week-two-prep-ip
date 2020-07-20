@@ -19,22 +19,21 @@
       <form>
         <div class="form-group">
           <label for="date">Enter your birth date</label>
-          <input class="form-control col-md-2" type="date" name="date" id="birthDate" required><br>
+          <input class="form-control col-md-2" type="date" name="date" id="birthDate" required />
         </div>
 
         <div class="form-group">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required />
             <label class="form-check-label" for="male">Male</label><br>
 
             <input class="form-check-input female" type="radio" name="gender" id="female" value="female">
-            <label class="form-check-label" for="female">Female</label><br>
+            <label class="form-check-label" for="female">Female</label>
           </div>
         </div>
 
         <div class="form-group">
-          <!-- <button type="reset" onclick="clear()" class="btn btn-primary">Reset</button> -->
-          <button type="button" onclick="akanName()" class="btn btn-primary">Submit</button>
+          <button type="submit" onclick="akanName()" class="btn btn-primary" id="submitBtn">Submit</button>
           <button type="reset" onclick="clearAnswer()" class="btn btn-primary">Reset</button>
         </div>
 
@@ -43,7 +42,7 @@
         </div>
       </form>
     </div>
-  </div>  
+  </div>
 
   <script src="js/script.js"></script>
 </body>

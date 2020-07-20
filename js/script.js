@@ -5,10 +5,10 @@ function clearAnswer() {
   response.innerHTML = ''
 }
 
-
-function akanName(params) {
+function akanName() {
   validDate()
 }
+
 // validate date input
 function validDate() {
   let d = new Date(dob.value).getDate()
