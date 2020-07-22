@@ -5,7 +5,7 @@ function clearAnswer() {
   response.innerHTML = ''
 }
 
-function akanName() {
+function akanName(e) {
   validDate()
 }
 
@@ -70,4 +70,5 @@ function assignName() {
       }
     }
   }
+  event.preventDefault();
 }
